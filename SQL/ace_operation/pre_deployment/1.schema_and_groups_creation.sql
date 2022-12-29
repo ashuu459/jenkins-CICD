@@ -17,4 +17,3 @@ alter default privileges in schema ace_operation grant execute on procedures to 
 alter default privileges in schema ace_operation grant all on tables to group ace_operation_cons_owner_rl;
 alter default privileges in schema ace_operation grant all on functions to group ace_operation_cons_owner_rl;
 alter default privileges in schema ace_operation grant all on procedures to group ace_operation_cons_owner_rl;
-
