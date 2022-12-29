@@ -4,7 +4,6 @@ create group ace_operation_cons_looker_rl;
 create group ace_operation_cons_updater_rl;
 create group ace_operation_cons_owner_rl;
 
-
 grant usage on schema ace_operation to group ace_operation_cons_looker_rl;
 grant usage on schema ace_operation to group ace_operation_cons_updater_rl;
 grant usage, create on schema ace_operation to group ace_operation_cons_owner_rl;
