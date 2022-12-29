@@ -187,7 +187,7 @@ def main():
 		# Deploy SQL objects in transaction
 		if len(pre_deployment) > 0 or len(tables) > 0 or len(functions) > 0 or len(procedures) > 0 or len(views) > 0 or len(lbviews) > 0 or len(constraints) > 0 or len(post_deployment) > 0:
 			#conn = pg.connect(host=sys.argv[1], user=sys.argv[4], password=sys.argv[5], database=sys.argv[2], port=sys.argv[3], sslmode="require")
-			conn = pg.connect(host="redshift-cluster-1.cpiazh88ds78.us-east-1.redshift.amazonaws.com",database="dev",user="admin",port=5439, password="Admin123")
+			conn = pg.connect(host="redshift-cluster-3.cpiazh88ds78.us-east-1.redshift.amazonaws.com",database="dev",user="awsuser",port=5439, password="Admin123")
 			cur = conn.cursor()
 			build_fsso = sys.argv[4]
 			print("Fetch Schema Owners SQL...")
